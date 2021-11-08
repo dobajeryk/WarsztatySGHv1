@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class ControllerExample {
-    public ControllerExample() {
+    public ControllerExample(ServiceExample service) {
         System.out.println("Tworze beana - ControllerExample");
     }
 }
