@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class DiFields {
 
     @Autowired
-    private MyComponent myComponent;
+    private MyComponent2 myComponent;
 
     @EventListener(ApplicationReadyEvent.class)
     public void doAfterStartup() {

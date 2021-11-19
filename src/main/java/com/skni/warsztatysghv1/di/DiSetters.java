@@ -7,10 +7,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class DiSetters {
-    private MyComponent myComponent;
+
+    private MyComponent2 myComponent;
 
     @Autowired
-    public void setMyComponent(MyComponent myComponent) {
+    public void setMyComponent(MyComponent2 myComponent) {
         this.myComponent = myComponent;
     }
 
