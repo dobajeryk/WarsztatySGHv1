@@ -1,6 +1,7 @@
 package com.skni.warsztatysghv1.di;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
@@ -11,7 +12,7 @@ public class DiSetters {
     private MyComponent myComponent;
 
     @Autowired
-    public void setMyComponent(MyComponent myComponent) {
+    public void setMyComponent(@Qualifier("myComponentSecond") MyComponent myComponent) {
         this.myComponent = myComponent;
     }
 
