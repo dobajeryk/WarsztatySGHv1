@@ -12,7 +12,7 @@ public class DiConstructor {
     private final MyComponent myComponent;
 
     //    @Autowired
-    public DiConstructor(@Qualifier("myCoponentNew") MyComponent myComponent) {
+    public DiConstructor(MyComponent myComponent) {
         this.myComponent = myComponent;
     }
 

@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 public class DiFields {
 
     @Autowired
-    @Qualifier("myCoponentNew")
     private MyComponent myComponent;
 
     @EventListener(ApplicationReadyEvent.class)
