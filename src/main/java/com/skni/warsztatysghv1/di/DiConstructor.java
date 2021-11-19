@@ -8,10 +8,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class DiConstructor {
 
-    private final MyComponent2 myComponent;
+    private final MyComponent myComponent;
 
 //    @Autowired
-    public DiConstructor(MyComponent2 myComponent) {
+    public DiConstructor(MyComponent myComponent) {
         this.myComponent = myComponent;
     }
 
